@@ -68,11 +68,7 @@ nav ul li {
   padding-left: 30px;
 }
 
-i {
-  color: #4d007a;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+
 
 /*responsive nav*/
 
@@ -83,7 +79,7 @@ i {
 
   nav {
     width: 100px;
-    background-color: white;
+    /* background-color: white; */
   }
 
   .opened {
@@ -94,14 +90,16 @@ i {
     box-shadow: 200px 0px 204px 141px rgba(0, 0, 0, 0.31);
     -webkit-box-shadow: 200px 0px 204px 141px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 200px 0px 204px 141px rgba(0, 0, 0, 0.31);
+    transition: 1s;
   }
-
+  
   .position {
     z-index: -1000;
   }
-
+  
   .opacity {
     opacity: 1;
+    transition: 3s;
   }
 
   .center {
@@ -120,6 +118,10 @@ i {
     width: 2.2rem;
     height: 15px;
     border-bottom: 3px solid black;
+  }
+  .trait-dark {
+
+    border-bottom: 3px solid white;
   }
 
   i {
@@ -219,3 +221,33 @@ main h1 {
   flex-direction: column;
   align-items: center;
 }
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  margin-left: 1500px;
+  padding: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-dark {
+  background-color: black;
+} 
+
+.bg-dark {
+  background-color: black;
+}
+
+.text-light {
+  color: white;
+}
+
+.border-light {
+  color: white;
+}
+
